@@ -1,0 +1,22 @@
+﻿@model IEnumerable<KhumaloCrafts.Models.Product>
+
+@{
+    ViewData["Title"] = "Our Handcrafted Products";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>
+            <strong>@product.Name</strong> - @product.Price:C
+            <p>@product.Description</p>
+        </li>
+    }
+</ul>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to KhumaloCrafts</h1>
+    <p>A Products Web App</p>
+</div>
